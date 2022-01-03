@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div {
+            /* position: relative; */
+            transform: translate(100px,100px);
+            height: 63px;
+            width: 185px;
+            border: 2px solid #000;
+        }
+        div section {
+            overflow: hidden;
+            /* position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%); */
+            float: left;
+            margin: 5px;
+            height: 50px;
+            width: 50px;
+            background-color: pink;
+        }
+        p {
+            height: 50px;
+            width: 50px;
+            background-color: hotpink;
+            transition: all .5s;
+            transform-origin: left bottom;
+            transform: rotate(90deg);
+            text-align: center;
+            line-height: 50px;
+
+        }
+        div section:hover p {
+            transform: rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <p>Enjoy</p>
+        </section>
+        <section>
+            <p>My</p>
+        </section>
+        <section>
+            <p>Life</p>
+        </section>
+    </div>
+</body>
+</html>

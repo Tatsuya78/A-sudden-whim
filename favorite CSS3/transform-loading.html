@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .jindu {
+            width: 180px;
+            height: 10px;
+            margin: 100px auto;
+            border: 1px solid #d28c7f;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .jindu .jiazai {
+            width: 0px;
+            height: 100%;
+            background-color: #d28c7f;
+            transition: width 1s;
+        }
+        /* .jindu:hover {
+            width: 180px;
+        } */
+        .jindu:hover .jiazai {
+            width: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="jindu">
+        <div class="jiazai"></div>
+    </div>
+</body>
+</html>
